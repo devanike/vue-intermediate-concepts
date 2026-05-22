@@ -1,16 +1,18 @@
 <script setup>
-import { ref, defineAsyncComponent } from 'vue'
+import { ref } from 'vue'
+// TODO: import defineAsyncComponent from vue
+
 import TabHome from './TabHome.vue'
 import TabProfile from './TabProfile.vue'
 
-const TabSettings = defineAsyncComponent(() => import('./TabSettings.vue'))
+// TODO: create TabSettings using defineAsyncComponent that lazily imports './TabSettings.vue'
 
 const currentTab = ref('TabHome')
 
 const tabs = {
   TabHome,
   TabProfile,
-  TabSettings
+  // TODO: add TabSettings here
 }
 
 const tabLabels = {
@@ -37,7 +39,7 @@ const tabLabels = {
       </button>
     </div>
     <div style="background: #35495e; padding: 16px; border-radius: 6px; min-height: 120px;">
-      <component :is="tabs[currentTab]" />
+      <!-- TODO: add the dynamic component tag here that renders tabs[currentTab] -->
     </div>
   </div>
 </template>

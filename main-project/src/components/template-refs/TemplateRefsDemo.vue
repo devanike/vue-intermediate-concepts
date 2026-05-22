@@ -1,25 +1,24 @@
 <script setup>
-import { useTemplateRef, onMounted, ref } from 'vue'
+import { ref } from 'vue'
+// TODO: import useTemplateRef and onMounted from vue
 
-const inputRef = useTemplateRef('myInput')
-const boxRef = useTemplateRef('myBox')
+// TODO: create a template ref called inputRef using useTemplateRef with the name 'myInput'
+
+// TODO: create a template ref called boxRef using useTemplateRef with the name 'myBox'
+
 const boxWidth = ref(null)
 const isFocused = ref(false)
 
-onMounted(() => {
-  inputRef.value.focus()
-  boxWidth.value = boxRef.value.offsetWidth
-  console.log('input element:', inputRef.value)
-  console.log('box element:', boxRef.value)
-  console.log('box width:', boxWidth.value + 'px')
-})
+// TODO: add onMounted:
+// 1. call focus() on inputRef.value
+// 2. set boxWidth.value to boxRef.value.offsetWidth
+// 3. log 'input element:' and inputRef.value
+// 4. log 'box element:' and boxRef.value
+// 5. log 'box width:' and boxWidth.value + 'px'
 
-function highlightBox() {
-  boxRef.value.style.border = '2px solid #42b883'
-  setTimeout(() => {
-    boxRef.value.style.border = '2px solid #35495e'
-  }, 1000)
-}
+// TODO: create a function called highlightBox that:
+// 1. sets boxRef.value.style.border to '2px solid #42b883'
+// 2. after 1000ms resets it back to '2px solid #35495e'
 </script>
 
 <template>
