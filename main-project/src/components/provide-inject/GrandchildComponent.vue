@@ -1,8 +1,9 @@
 <script setup>
-import { inject } from 'vue'
+// TODO: import inject from vue
 
-const username = inject('username')
-const theme = inject('theme')
+// TODO: inject 'username' and store it in a variable called username
+
+// TODO: inject 'theme' and store it in a variable called theme
 </script>
 
 <template>
@@ -17,7 +18,7 @@ const theme = inject('theme')
         fontSize: '14px'
       }"
     >
-      GrandchildComponent: Hello, <strong style="color: #42b883;">{{ username }}</strong>!
+      GrandchildComponent — Hello, <strong style="color: #42b883;">{{ username }}</strong>!
       Current theme: <strong>{{ theme }}</strong>
     </div>
   </div>

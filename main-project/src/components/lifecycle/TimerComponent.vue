@@ -1,5 +1,6 @@
 <script setup>
-import { onMounted, onBeforeUnmount, onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
+// TODO: import the lifecycle hooks you need from vue
 
 const seconds = ref(0)
 let timer = null
@@ -13,19 +14,11 @@ function stopTimer() {
   timer = null
 }
 
-onMounted(() => {
-  startTimer()
-  console.log('2. onMounted: component on screen, timer started')
-})
+// TODO: add onMounted: call startTimer() and log 'onMounted: component on screen, timer started'
 
-onBeforeUnmount(() => {
-  console.log('5. onBeforeUnmount: component about to leave')
-})
+// TODO: add onBeforeUnmount: log 'onBeforeUnmount: component about to leave'
 
-onUnmounted(() => {
-  stopTimer()
-  console.log('6. onUnmounted: component gone, timer cleaned up')
-})
+// TODO: add onUnmounted: call stopTimer() and log 'onUnmounted: component gone, timer cleaned up'
 </script>
 
 <template>

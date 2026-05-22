@@ -1,19 +1,20 @@
 <script setup>
-import {
-  onBeforeMount, onMounted,
-  onBeforeUpdate, onUpdated,
-  onBeforeUnmount, onUnmounted,
-  ref
-} from 'vue'
+import { ref } from 'vue'
+// TODO: import the lifecycle hooks you need from vue
 
 const count = ref(0)
 
-onBeforeMount(() => console.log('1. onBeforeMount: preparing, not visible yet'))
-onMounted(() => console.log('2. onMounted: now on screen'))
-onBeforeUpdate(() => console.log('3. onBeforeUpdate: about to re-render'))
-onUpdated(() => console.log('4. onUpdated: re-render done'))
-onBeforeUnmount(() => console.log('5. onBeforeUnmount: about to leave'))
-onUnmounted(() => console.log('6. onUnmounted: fully gone'))
+// TODO: add onBeforeMount: log '1. onBeforeMount: preparing, not visible yet'
+
+// TODO: add onMounted: log '2. onMounted: now on screen'
+
+// TODO: add onBeforeUpdate: log '3. onBeforeUpdate: about to re-render'
+
+// TODO: add onUpdated: log '4. onUpdated: re-render done'
+
+// TODO: add onBeforeUnmount: log '5. onBeforeUnmount: about to leave'
+
+// TODO: add onUnmounted: log '6. onUnmounted: fully gone'
 </script>
 
 <template>

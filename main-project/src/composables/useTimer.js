@@ -1,4 +1,5 @@
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref } from 'vue'
+// TODO: import the lifecycle hooks you need from vue
 
 export function useTimer() {
   const seconds = ref(0)
@@ -23,15 +24,9 @@ export function useTimer() {
     seconds.value = 0
   }
 
-  onMounted(() => {
-    startTimer()
-    console.log('useTimer: timer started')
-  })
+  // TODO: add onMounted: call startTimer() and log 'useTimer: timer started'
 
-  onUnmounted(() => {
-    pauseTimer()
-    console.log('useTimer: timer cleaned up')
-  })
+  // TODO: add onUnmounted: call pauseTimer() and log 'useTimer: timer cleaned up'
 
-  return { seconds, isRunning, startTimer, pauseTimer, resetTimer }
+  // TODO: return seconds, isRunning, startTimer, pauseTimer and resetTimer
 }
