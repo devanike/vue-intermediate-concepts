@@ -5,7 +5,7 @@
       This is the settings layout. The content below changes based on the route.
     </p>
     <div style="background: #2a3a4a; padding: 16px; border-radius: 6px;">
-      <router-view />
+      <!-- TODO: add a nested router-view here -->
     </div>
   </div>
 </template>
