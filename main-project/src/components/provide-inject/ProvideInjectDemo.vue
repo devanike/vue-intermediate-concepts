@@ -16,7 +16,7 @@ const theme = ref('dark')
   <div style="display: flex; flex-direction: column; gap: 8px;">
     <div style="background: #35495e; padding: 16px; border-radius: 6px;">
       <div style="font-size: 14px; margin-bottom: 12px;">
-        ProvideInjectDemo — providing:
+        ProvideInjectDemo providing:
         <strong style="color: #42b883;">username</strong> and
         <strong style="color: #42b883;">theme</strong>
       </div>

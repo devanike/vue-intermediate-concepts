@@ -4,6 +4,10 @@ import ComposablesDemo from './components/composables/ComposablesDemo.vue'
 import ProvideInjectDemo from './components/provide-inject/ProvideInjectDemo.vue'
 import TemplateRefsDemo from './components/template-refs/TemplateRefsDemo.vue'
 import DynamicAsyncDemo from './components/dynamic-async/DynamicAsyncDemo.vue'
+import FormHandlingDemo from './components/form-handling/FormHandlingDemo.vue'
+import TeleportDemo from './components/teleport/TeleportDemo.vue'
+import TransitionsDemo from './components/transitions/TransitionsDemo.vue'
+import PiniaDemo from './components/pinia/PiniaDemo.vue'
 </script>
 
 <template>
@@ -25,5 +29,17 @@ import DynamicAsyncDemo from './components/dynamic-async/DynamicAsyncDemo.vue'
 
     <h2>Dynamic and Async Components</h2>
     <DynamicAsyncDemo />
+
+    <h2>Form Handling and Custom v-model Modifiers</h2>
+    <FormHandlingDemo />
+
+    <h2>Teleport</h2>
+    <TeleportDemo />
+
+    <h2>Transitions and TransitionGroup</h2>
+    <TransitionsDemo />
+
+    <h2>Pinia</h2>
+    <PiniaDemo />
   </div>
 </template>
